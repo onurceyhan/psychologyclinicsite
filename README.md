@@ -41,7 +41,7 @@ The website embodies a warm, professional, yet playful aesthetic that appeals to
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/onurceyhan/uysal-psikolog-klinigi.git
+git clone https://github.com/onurceyhan/psychologyclinicsite.git
 cd uysal-psikolog-klinigi
 ```
 
@@ -74,7 +74,7 @@ npm run preview
 ## 📂 Project Structure
 
 ```
-uysal-psikolog-klinigi/
+psychologyclinicsite/
 ├── public/              # Static assets
 ├── src/
 │   ├── components/      # Vue components
