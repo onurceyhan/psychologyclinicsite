@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-gray-800 antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-8 py-4 bg-gradient-to-r from-bubblegum-400 to-bubblegum-500 text-white rounded-full font-bold text-lg hover:from-bubblegum-500 hover:to-bubblegum-600 transition-all duration-300 shadow-2xl hover:shadow-bubblegum-300/50 transform hover:scale-105 hover:-translate-y-1;
+  }
+  
+  .btn-secondary {
+    @apply px-8 py-3 bg-gradient-to-r from-sunshine-400 to-peach-400 text-white border-2 border-white rounded-full font-bold hover:scale-105 transition-all duration-300 shadow-lg;
+  }
+  
+  .section-title {
+    @apply text-5xl md:text-6xl font-bold bg-gradient-to-r from-bubblegum-500 via-sunshine-500 to-mint-500 bg-clip-text text-transparent mb-6 font-fun;
+  }
+  
+  .card {
+    @apply bg-white rounded-[2rem] shadow-xl p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:rotate-1 border-4 border-transparent hover:border-bubblegum-200;
+  }
+  
+  .cute-blob {
+    @apply absolute rounded-full blur-3xl opacity-30 animate-pulse-slow;
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+
